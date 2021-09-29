@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(221, 221, 221);             
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h3 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display',sans-serif ;
+  font-size: 2rem;
+  margin: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 7em auto 5em;
+  justify-content: center;
+  padding: 20px;
+}
+
+p.card-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 1.80;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 12px 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-container {
+  box-shadow: 0 0 20px rgba(0, 0, 1, 0.295);
+  display: flex;
+  flex-direction: column;
+  border-radius: .45em;
+  overflow: hidden;
+}
+
+.card-1  {
+  background-color: hsl(31, 77%, 52%);
+  padding: 60px 60px 60px 35px;
+}
+
+.card-1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 60px 60px 60px 35px;
+}
+
+.card-2 button {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 60px 60px 60px 35px;
+}
+
+.card-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+footer , a {
+  color: hsl(184, 100%, 22%);
+  text-decoration: none;
+  text-align: center;
+
+}
+
+/* Media Query */
+ @media (min-width: 992px) {
+    .card-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-width: 850px;
+    }
+
+    p.card-description {
+      font-size: 12px;
+      line-height: 1.7;
+      margin-bottom: 50px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+      padding: 50px;
+    }
+ }
